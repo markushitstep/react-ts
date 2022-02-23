@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Card, CardVariant } from './components/card';
+import { EventsExample } from './components/EventsExample';
 import List from './components/List';
 import { TodoItem } from './components/TodoItem';
 import { UserItem } from './components/UserItem';
@@ -36,6 +37,7 @@ const App = () => {
 
   return (
     <div>
+      <EventsExample />
       <Card onClick={(num) => console.log('click', num)} variant={CardVariant.primary} width='200px' height='200px'>
         <button>Button</button>
       </Card>
